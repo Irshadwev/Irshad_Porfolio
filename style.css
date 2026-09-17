@@ -109,40 +109,6 @@ ul {
 
 
 /* ============================================================
-   3. LIGHT THEME
-   ============================================================ */
-
-body.light-theme {
-
-    --bg-main: #f3f7f8;
-    --bg-secondary: #e7eef1;
-    --bg-section: #edf3f5;
-
-    --card-bg: rgba(255, 255, 255, 0.90);
-    --card-bg-solid: #ffffff;
-
-    --text-main: #102029;
-    --text-secondary: #566871;
-    --text-muted: #71838b;
-
-    --accent: #009dbb;
-    --accent-light: #00bcd9;
-    --accent-dark: #007c94;
-
-    --border: rgba(0, 140, 170, 0.20);
-    --border-light: rgba(0, 0, 0, 0.08);
-
-    --header-bg: rgba(255, 255, 255, 0.90);
-
-    --shadow:
-        0 25px 60px rgba(15, 45, 55, 0.12);
-
-    --glow:
-        0 0 35px rgba(0, 150, 180, 0.08);
-}
-
-
-/* ============================================================
    4. COMMON CONTAINER
    ============================================================ */
 
@@ -345,53 +311,6 @@ section {
 
     box-shadow:
         0 0 22px rgba(0, 217, 255, 0.22);
-}
-
-
-/* ============================================================
-   THEME TOGGLE
-   ============================================================ */
-
-.theme-toggle {
-    width: 40px;
-    height: 40px;
-
-    border-radius: 50%;
-
-    border: 1px solid var(--border);
-
-    background: transparent;
-
-    color: var(--text-main);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 18px;
-
-    transition:
-        transform 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease;
-}
-
-.theme-toggle:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    transform: rotate(15deg);
-}
-
-.sun-icon {
-    display: none;
-}
-
-body.light-theme .moon-icon {
-    display: none;
-}
-
-body.light-theme .sun-icon {
-    display: block;
 }
 
 
@@ -983,6 +902,7 @@ body.light-theme .sun-icon {
     height: 100%;
 
     object-fit: cover;
+    object-position: center 30%;
 
     transition:
         transform 0.5s ease;
@@ -1163,6 +1083,8 @@ body.light-theme .sun-icon {
     height: 28px;
 
     object-fit: contain;
+
+    filter: invert(77%) sepia(86%) saturate(1635%) hue-rotate(151deg) brightness(103%) contrast(103%);
 }
 
 
@@ -2523,7 +2445,7 @@ body.light-theme .sun-icon {
 @media (max-width: 560px) {
 
     .scroll-mouse {
-        bottom: 18px;
+        bottom: 180px;
     }
 
     .mouse {
