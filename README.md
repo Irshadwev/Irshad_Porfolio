@@ -1,19 +1,53 @@
-<div align="center">
+# Irshad Ahmad — Backend Developer Portfolio
 
-# vCard - Personal portfolio
+![Portfolio Preview](assets\Desktop.png)
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+> Personal portfolio website showcasing my journey, backend development skills, projects, and technical experience.
 
- <a href="https://codingstella.github.io/vCard-personal-portfolio/"><strong>➥ Live Demo</strong></a> 
- 
- </div>
- 
-## Demo
+**Live Portfolio:** [irshadwev.github.io/Irshad_Porfolio](https://irshadwev.github.io/Irshad_Porfolio/)
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+---
+## 📸 Portfolio Preview
 
+### Desktop
 
-## License
+![Portfolio Website](assets\Desktop2.png)
 
-This project is **free to use** and does not contains any license.
+---
+
+## 🌍 Live Website
+
+Visit my portfolio:
+
+**[View Portfolio →](https://irshadwev.github.io/Irshad_Porfolio/)**
+
+---
+
+## 📬 Connect With Me
+
+* **GitHub:** [github.com/Irshadwev](https://github.com/Irshadwev)
+* **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/irshad-ahmed-developer/)
+* **Fiverr:** [Fiverr Profile](https://www.fiverr.com/irshadwebdev)
+
+---
+
+## 📌 Current Focus
+
+I'm currently focused on improving my backend development skills through practical projects involving:
+
+* Django
+* Django REST Framework
+* REST API architecture
+* MySQL database design
+* Authentication & authorization
+* Redis caching
+* API testing
+* Real-world business applications
+---
+
+## 👨‍💻 Developer
+
+**Irshad Ahmad**
+Backend Developer
+
+> Building my backend development journey one practical project at a time.

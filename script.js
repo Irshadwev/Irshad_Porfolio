@@ -1,11 +1,4 @@
-/* =========================================================
-   IRSHAD AHMAD - BACKEND DEVELOPER PORTFOLIO
-   Main JavaScript
-   ========================================================= */
 document.addEventListener("DOMContentLoaded", () => {
-    /* =====================================================
-       1. MOBILE NAVIGATION
-       ===================================================== */
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector(".nav-menu");
     const navLinks = document.querySelectorAll(".nav-link");
@@ -17,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
             isOpen ? "true" : "false"
         );
     });
-    // Close mobile menu after clicking a link
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             navMenu?.classList.remove("mobile-open");
@@ -27,9 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         });
     });
-    /* =====================================================
-       3. SMOOTH SCROLLING
-       ===================================================== */
     navLinks.forEach(link => {
         link.addEventListener("click", function (event) {
             const targetId = this.getAttribute("href");
@@ -46,9 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    /* =====================================================
-       4. HEADER SCROLL EFFECT
-       ===================================================== */
     const header = document.querySelector(".header");
     window.addEventListener("scroll", () => {
         if (!header) return;
@@ -58,9 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
             header.classList.remove("scrolled");
         }
     });
-    /* =====================================================
-       5. ACTIVE NAVIGATION LINK
-       ===================================================== */
     const sections = document.querySelectorAll("section[id]");
     const sectionObserver = new IntersectionObserver(
         (entries) => {
@@ -86,9 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => {
         sectionObserver.observe(section);
     });
-    /* =====================================================
-       6. SCROLL REVEAL ANIMATIONS
-       ===================================================== */
     const animatedElements = document.querySelectorAll(
         ".section-title, " +
         ".about-content, " +
@@ -118,9 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
     animatedElements.forEach(element => {
         revealObserver.observe(element);
     });
-    /* =====================================================
-       7. STAGGER ANIMATION FOR CARDS
-       ===================================================== */
     const cardGroups = [
         ".service-card",
         ".skill-card",
@@ -134,16 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 `${index * 0.08}s`;
         });
     });
-    /* =====================================================
-       8. HERO TEXT ANIMATION
-       ===================================================== */
     const heroContent = document.querySelector(".hero-content");
     if (heroContent) {
         heroContent.classList.add("hero-loaded");
     }
-    /* =====================================================
-       9. CODE WINDOW TYPING EFFECT
-       ===================================================== */
     const codeLines = document.querySelectorAll(
         ".code-window .code-line"
     );
@@ -154,9 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
             line.classList.add("code-line-show");
         }, 500 + index * 180);
     });
-    /* =====================================================
-       10. MOUSE SCROLL INDICATOR
-       ===================================================== */
     const mouseIndicator = document.querySelector(
         ".scroll-mouse"
     );
@@ -168,9 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     });
-    /* =====================================================
-       11. SCROLL TO TOP BUTTON
-       ===================================================== */
     const scrollTopButton = document.querySelector(
         ".scroll-top"
     );
@@ -188,10 +153,6 @@ document.addEventListener("DOMContentLoaded", () => {
             behavior: "smooth"
         });
     });
-    /* =====================================================
-       12. PROJECT CARD TILT EFFECT
-       Very subtle professional 3D effect
-       ===================================================== */
     const projectCards = document.querySelectorAll(
         ".project-card"
     );
@@ -219,9 +180,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 "perspective(900px) rotateX(0) rotateY(0)";
         });
     });
-    /* =====================================================
-       13. SKILL CARD HOVER EFFECT
-       ===================================================== */
     const skillCards = document.querySelectorAll(
         ".skill-card"
     );
@@ -233,10 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.remove("skill-hover");
         });
     });
-    /* =====================================================
-       14. CONTACT FORM
-       Frontend validation
-       ===================================================== */
     const contactForm =
         document.querySelector(".contact-form");
     const formMessage =
@@ -249,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
             contactForm.querySelector("[name='email']");
         const message =
             contactForm.querySelector("[name='message']");
-        // Basic validation
         if (!name?.value.trim()) {
             showFormMessage(
                 "Please enter your name.",
@@ -284,7 +237,6 @@ document.addEventListener("DOMContentLoaded", () => {
             message?.focus();
             return;
         }
-        // Success message
         showFormMessage(
             "Thanks! Your message is ready to be sent.",
             "success"
@@ -297,19 +249,12 @@ document.addEventListener("DOMContentLoaded", () => {
         formMessage.className =
             `form-message ${type}`;
     }
-    /* =====================================================
-       15. CURRENT YEAR
-       ===================================================== */
     const currentYear =
         document.querySelector(".current-year");
     if (currentYear) {
         currentYear.textContent =
             new Date().getFullYear();
     }
-    /* =====================================================
-       16. BACKGROUND PARALLAX
-       Very subtle hero movement
-       ===================================================== */
     const heroBackground =
         document.querySelector(".hero-background");
     window.addEventListener("scroll", () => {
@@ -320,8 +265,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 `translateY(${scrollPosition * 0.15}px)`;
         }
     });
-    /* =====================================================
-       17. PAGE LOADED
-       ===================================================== */
     document.body.classList.add("page-loaded");
 });
