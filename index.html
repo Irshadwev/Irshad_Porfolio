@@ -2,1804 +2,806 @@
 <html lang="en">
 
 <head>
-
-
-    <!-- =====================================================
-         BASIC PAGE SETTINGS
-         ===================================================== -->
-
     <meta charset="UTF-8">
-
-    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Browser title -->
     <title>Irshad Ahmad | Backend Developer</title>
-
-    <!-- Website description -->
     <meta name="description"
         content="Irshad Ahmad - Backend Developer specializing in Python, Django, REST APIs and databases.">
-
-    <!-- =====================================================
-         CSS FILE
-         ===================================================== -->
-
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-
 <body>
-
-
-    <!-- =========================================================
-     HEADER / NAVBAR
-     ========================================================= -->
-
     <header class="header">
-
         <div class="container navbar">
-
-
-            <!-- =================================================
-             LOGO
-             ================================================= -->
-
             <a href="#home" class="logo">
-
                 <span class="logo-icon">&lt;/&gt;</span>
-
                 <span>
                     Irshad <strong>Ahmad</strong>
                 </span>
-
             </a>
-
-
-            <!-- =================================================
-             NAVIGATION
-             ================================================= -->
-
-            <nav class="nav-menu">
-
-                <a href="#home" class="nav-link active">
-                    Home
-                </a>
-
-                <a href="#about" class="nav-link">
-                    About
-                </a>
-
-                <a href="#services" class="nav-link">
-                    Services
-                </a>
-
-                <a href="#skills" class="nav-link">
-                    Skills
-                </a>
-
-                <a href="#projects" class="nav-link">
-                    Projects
-                </a>
-
-                <a href="#education" class="nav-link">
-                    Education
-                </a>
-
-                <a href="#contact" class="nav-link">
-                    Contact
-                </a>
-
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="primary-navigation">
+                <a href="#home" class="nav-link active"> Home </a>
+                <a href="#about" class="nav-link"> About </a>
+                <a href="#services" class="nav-link">Services </a>
+                <a href="#skills" class="nav-link">Skills </a>
+                <a href="#projects" class="nav-link">Projects </a>
+                <a href="#education" class="nav-link">Education </a>
+                <a href="#contact" class="nav-link">Contact </a>
             </nav>
-
-
-            <!-- =================================================
-             RIGHT SIDE NAV ACTIONS
-             ================================================= -->
-
             <div class="nav-actions">
-
-
-                <!-- Hire Me button -->
-                <a href="#contact" class="hire-btn">
-                    Hire Me
-                </a>
-
-
+                <a href="#contact" class="hire-btn">Hire Me </a>
             </div>
-
         </div>
-
     </header>
-
-
-
-    <!-- =========================================================
-     MAIN WEBSITE
-     ========================================================= -->
-
     <main>
-
-
-
-        <!-- =========================================================
-     1. HOME SECTION
-     ========================================================= -->
-
         <section class="hero" id="home">
-
-
-            <!-- =====================================================
-         HERO BACKGROUND IMAGE
-         
-         CHANGE IMAGE HERE
-         Replace hero-bg.jpg with your own image.
-         ===================================================== -->
-
-            <div class="hero-background" style="background-image: url('assets/hero-bg.jpg');"></div>
-
-
-            <!-- Dark overlay over background -->
+            <div class="hero-background" style="background-image: url('assets/bg.png');"></div>
             <div class="hero-overlay"></div>
-
-
-            <!-- Hero Content -->
             <div class="container hero-content">
-
-
-                <!-- =================================================
-             LEFT SIDE — HERO TEXT
-             ================================================= -->
-
                 <div class="hero-text">
-
-
-                    <!-- Small introduction -->
                     <p class="hero-intro">
                         Hello, I'm
                     </p>
-
-
-                    <!-- Main name -->
                     <h1>
                         Irshad
                         <span>Ahmad</span>
                     </h1>
-
-
-                    <!-- Professional title -->
                     <h2>
                         Backend Developer
                     </h2>
-
-
-                    <!-- Short description -->
                     <p class="hero-description">
-
                         I build reliable backend systems, REST APIs,
                         and database-driven web applications using
                         Python, Django and modern backend technologies.
-
                     </p>
-
-
-                    <!-- =================================================
-                 HERO BUTTONS
-                 ================================================= -->
-
                     <div class="hero-buttons">
-
-
-                        <!-- Projects button -->
                         <a href="#projects" class="btn btn-primary">
-
                             View Projects
-
                             <span>
                                 →
                             </span>
-
                         </a>
-
-
-                        <!-- Contact button -->
                         <a href="#contact" class="btn btn-outline">
-
                             Contact Me
-
                         </a>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- =================================================
-             RIGHT SIDE — HERO VISUAL
-             ================================================= -->
-
                 <div class="hero-visual">
-
-
-                    <!-- =================================================
-                 CODE EDITOR CARD
-                 ================================================= -->
-
                     <div class="code-window">
-
-
-                        <!-- Code window top bar -->
                         <div class="window-header">
-
                             <div class="window-dots">
-
                                 <span class="dot red"></span>
-
                                 <span class="dot yellow"></span>
-
                                 <span class="dot green"></span>
-
                             </div>
-
-
                             <span class="window-title">
                                 developer.py
                             </span>
-
                         </div>
-
-
-                        <!-- =================================================
-                     CODE CONTENT
-                     ================================================= -->
-
                         <div class="code-content">
-
                             <pre><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
-
     name = <span class="string">"Irshad Ahmad"</span>
-
     role = <span class="string">"Backend Developer"</span>
-
     skills = [
         <span class="string">"Python"</span>,
         <span class="string">"Django"</span>,
         <span class="string">"DRF"</span>,
         <span class="string">"MySQL"</span>
     ]
-
     <span class="keyword">def</span> <span class="function">build</span>(self):
-
         <span class="keyword">return</span>
         <span class="string">
         "Robust Backend Systems"</span></code></pre>
-
                         </div>
-
                     </div>
-
-
-
-                    <!-- =================================================
-                 MOBILE PHONE CARD
-                 ================================================= -->
-
                     <div class="phone-card">
-
-
-                        <!-- Phone top -->
                         <div class="phone-top">
-
                             <span>
                                 09:41
                             </span>
-
                             <span>
                                 ●●●
                             </span>
-
                         </div>
-
-
-                        <!-- =================================================
-                     PROFILE IMAGE
-                     
-                     CHANGE IMAGE HERE
-                     ================================================= -->
-
                         <div class="phone-profile-image">
-
                             <img src="assets\profile.png" alt="Irshad Ahmad">
-
                         </div>
-
-
-                        <!-- Phone information -->
                         <div class="phone-content">
-
                             <h3>
                                 Irshad Ahmad
                             </h3>
-
                             <p>
                                 Backend Developer
                             </p>
-
                             <small>
                                 Python • Django • REST API
                             </small>
-
                         </div>
-
-
-                        <!-- Phone button -->
                         <a href="#projects" class="phone-button">
                             View Projects
                         </a>
-
-                        <!-- Mouse Scroll Indicator -->
-
-
-                        <!-- <div class="scroll-text">
-                                SCROLL
-                            </div> -->
-
-
-                        <!-- Social icons -->
                         <div class="phone-social">
-
-                                <a href="#" aria-label="LinkedIn">
-                                    in
-                                </a>
-
-                                <a href="#" aria-label="GitHub">
-                                    GH
-                                </a>
-
-                                <a href="#" aria-label="Fiverr">
-                                    F
-                                </a>
-
-                            </div>
-
+                            <a href="#" aria-label="LinkedIn">
+                                in
+                            </a>
+                            <a href="#" aria-label="GitHub">
+                                GH
+                            </a>
+                            <a href="#" aria-label="Fiverr">
+                                F
+                            </a>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
+            </div>
         </section>
 
-        <!-- changed here new for mouse -->
         <div class="scroll-mouse" aria-label="Scroll down">
-
             <div class="mouse">
                 <span></span>
             </div>
         </div>
-
-
-
-        <!-- =========================================================
-     2. ABOUT SECTION
-     ========================================================= -->
-
         <section class="about-section" id="about">
-
-
             <div class="container">
-
-
-                <!-- Section heading -->
                 <div class="section-heading">
-
                     <span class="section-line"></span>
-
                     <p>
                         ABOUT ME
                     </p>
-
                     <h2>
                         About <span>Me</span>
                     </h2>
-
                 </div>
-
-
-                <!-- About content -->
                 <div class="about-content">
-
-
-                    <!-- =================================================
-                 ABOUT TEXT
-                 ================================================= -->
-
                     <div class="about-text">
                         <h3>
                             Backend Developer focused on
                             building reliable web systems.
                         </h3>
                         <p>
-
                             I'm a passionate Backend Developer with
                             a strong focus on Python, Django, REST APIs
                             and database development.
-
                         </p>
-
-
                         <p>
-
                             My development journey started with Python
                             and gradually expanded into SQL, MySQL,
                             Django, Django REST Framework and API
                             development.
-
                         </p>
-
-
                         <p>
-
                             I enjoy turning ideas into practical,
                             reliable and scalable backend applications
                             while continuously improving my technical
                             skills through real-world projects.
-
                         </p>
-
-
-                        <!-- CV button -->
                         <a href="assets/Irshad-Ahmad-CV.pdf" class="cv-button" target="_blank">
-
                             Download CV
-
                         </a>
-
                     </div>
-
-
-
-                    <!-- =================================================
-                 ABOUT IMAGE
-                 
-                 CHANGE IMAGE HERE
-                 ================================================= -->
-
                     <div class="about-image">
-
                         <img src="assets\about-page.png" alt="Irshad Ahmad in a professional office setting">
-
                     </div>
-
-
-
-                    <!-- =================================================
-                 ABOUT STATISTICS
-                 ================================================= -->
-
                     <div class="about-stats">
-
-
                         <div class="stat-card">
-
                             <h3>
                                 2+
                             </h3>
-
                             <p>
                                 Years Learning &
                                 Development
                             </p>
-
                         </div>
-
-
                         <div class="stat-card">
-
                             <h3>
                                 10+
                             </h3>
-
                             <p>
                                 Projects &
                                 Practice Builds
                             </p>
-
                         </div>
-
-
                         <div class="stat-card">
-
                             <h3>
                                 8+
                             </h3>
-
                             <p>
                                 Technologies &
                                 Tools
                             </p>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =========================================================
-     3. SERVICES SECTION
-     ========================================================= -->
-
         <section class="services-section" id="services">
-
-
             <div class="container">
-
-
-                <!-- Section heading -->
                 <div class="section-heading">
-
                     <span class="section-line"></span>
-
                     <p>
                         WHAT I DO
                     </p>
-
                     <h2>
                         My <span>Services</span>
                     </h2>
-
                 </div>
-
-
-                <!-- Section description -->
                 <p class="section-description">
-
                     I build reliable backend solutions designed
                     around performance, security and scalability.
-
                 </p>
-
-
-
-                <!-- =================================================
-             SERVICES GRID
-             ================================================= -->
-
                 <div class="services-grid">
-
-
-                    <!-- =================================================
-                 SERVICE 1
-                 ================================================= -->
-
                     <article class="service-card">
-
-
-                        <!--
-                    Hosted service icon
-                -->
-
                         <div class="service-icon">
-
                             <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/server-network.svg"
                                 alt="Backend Development">
-
                         </div>
-
-
                         <h3>
                             Backend Development
                         </h3>
-
-
                         <p>
-
                             Build powerful and reliable backend
                             systems using Python and Django.
-
                         </p>
-
-
                         <a href="#contact">
                             Discuss Project →
                         </a>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 SERVICE 2
-                 ================================================= -->
-
                     <article class="service-card">
-
                         <div class="service-icon">
-
                             <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/api.svg"
                                 alt="REST API Development">
-
                         </div>
-
-
                         <h3>
                             REST API Development
                         </h3>
-
-
                         <p>
-
                             Develop secure and scalable REST APIs
                             using Django REST Framework.
-
                         </p>
-
-
                         <a href="#contact">
                             Discuss Project →
                         </a>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 SERVICE 3
-                 ================================================= -->
-
                     <article class="service-card">
-
                         <div class="service-icon">
-
                             <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/connection.svg"
                                 alt="API Integration">
-
                         </div>
-
-
                         <h3>
                             API Integration
                         </h3>
-
-
                         <p>
-
                             Connect applications with third-party
                             APIs and external services.
-
                         </p>
-
-
                         <a href="#contact">
                             Discuss Project →
                         </a>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 SERVICE 4
-                 ================================================= -->
-
                     <article class="service-card">
-
                         <div class="service-icon">
-
                             <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/database.svg"
                                 alt="Database Development">
-
                         </div>
-
-
                         <h3>
                             Database Development
                         </h3>
-
-
                         <p>
-
                             Design and manage structured databases
                             using MySQL and SQL.
-
                         </p>
-
-
                         <a href="#contact">
                             Discuss Project →
                         </a>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =========================================================
-     4. SKILLS SECTION
-     ========================================================= -->
-
         <section class="skills-section" id="skills">
-
-
             <div class="container">
-
-
-                <!-- Section heading -->
                 <div class="section-heading">
-
                     <span class="section-line"></span>
-
                     <p>
                         MY TECHNOLOGIES
                     </p>
-
                     <h2>
                         Technical <span>Skills</span>
                     </h2>
-
                 </div>
-
-
                 <p class="section-description">
-
                     Technologies and tools I use to build backend
                     applications and modern web APIs.
-
                 </p>
-
-
-
-                <!-- =================================================
-             BACKEND SKILLS
-             ================================================= -->
-
                 <div class="skills-category">
-
                     <h3>
                         Backend Development
                     </h3>
-
-
                     <div class="skills-grid">
-
-
-                        <!-- Python -->
                         <div class="skill-card">
-
-                            <!-- CHANGE ICON HERE -->
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                                 alt="Python">
-
                             <h4>
                                 Python
                             </h4>
-
                             <span>
                                 Programming
                             </span>
-
                         </div>
-
-
-
-                        <!-- Django -->
                         <div class="skill-card">
-
-                            <!-- CHANGE ICON HERE -->
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
                                 alt="Django">
-
                             <h4>
                                 Django
                             </h4>
-
                             <span>
                                 Framework
                             </span>
-
                         </div>
-
-
-
-                        <!-- Django REST Framework -->
                         <div class="skill-card">
-
-                            <!-- CHANGE ICON HERE -->
                             <img src="https://cdn.simpleicons.org/djangorestframework/ff1709"
                                 alt="Django REST Framework">
-
                             <h4>
                                 Django REST
                             </h4>
-
                             <span>
                                 API Framework
                             </span>
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- =================================================
-             DATABASE SKILLS
-             ================================================= -->
-
                 <div class="skills-category">
-
                     <h3>
                         Database
                     </h3>
-
-
                     <div class="skills-grid">
-
-
-                        <!-- MySQL -->
                         <div class="skill-card">
-
-                            <!-- CHANGE ICON HERE -->
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
                                 alt="MySQL">
-
                             <h4>
                                 MySQL
                             </h4>
-
                             <span>
                                 Database
                             </span>
-
                         </div>
-
-
-
-                        <!-- SQL -->
                         <div class="skill-card">
-
-                            <!-- CHANGE ICON HERE -->
                             <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/database-search.svg" alt="SQL">
-
                             <h4>
                                 SQL
                             </h4>
-
                             <span>
                                 Database Queries
                             </span>
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- =================================================
-             API & DEVELOPMENT TOOLS
-             ================================================= -->
-
                 <div class="skills-category">
-
                     <h3>
                         API & Development Tools
                     </h3>
-
-
                     <div class="skills-grid">
-
-
-                        <!-- REST API -->
                         <div class="skill-card">
-
                             <img src="https://cdn.jsdelivr.net/npm/@mdi/svg@latest/svg/api.svg" alt="REST API">
-
                             <h4>
                                 REST API
                             </h4>
-
                             <span>
                                 API Architecture
                             </span>
-
                         </div>
-
-
-
-                        <!-- Postman -->
                         <div class="skill-card">
-
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
                                 alt="Postman">
-
                             <h4>
                                 Postman
                             </h4>
-
                             <span>
                                 API Testing
                             </span>
-
                         </div>
-
-
-
-                        <!-- Git -->
                         <div class="skill-card">
-
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
                                 alt="Git">
-
                             <h4>
                                 Git
                             </h4>
-
                             <span>
                                 Version Control
                             </span>
-
                         </div>
-
-
-
-                        <!-- GitHub -->
                         <div class="skill-card">
-
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
                                 alt="GitHub">
-
                             <h4>
                                 GitHub
                             </h4>
-
                             <span>
                                 Code Hosting
                             </span>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =========================================================
-     5. PROJECTS SECTION
-     ========================================================= -->
-
         <section class="projects-section" id="projects">
-
-
             <div class="container">
-
-
-                <!-- Section heading -->
                 <div class="section-heading">
-
                     <span class="section-line"></span>
-
                     <p>
                         MY WORK
                     </p>
-
                     <h2>
                         Recent <span>Projects</span>
                     </h2>
-
                 </div>
-
-
                 <p class="section-description">
-
                     A selection of backend projects and practical
                     applications I've built.
-
                 </p>
-
-
-
-                <!-- =================================================
-             PROJECTS GRID
-             ================================================= -->
-
                 <div class="projects-grid">
-
-
-                    <!-- =================================================
-                 PROJECT 1
-                 ================================================= -->
-
                     <article class="project-card">
-
-
-                        <!--
-                    PROJECT IMAGE
-
-                    CHANGE IMAGE HERE:
-                    assets/projects/project-1.jpg
-                -->
-
                         <div class="project-image">
-
-                            <img src="assets/projects/project-1.jpg" alt="Customer Management API">
-
+                            <img src="assets/blog.png" alt="Customer Management API">
                         </div>
-
-
-                        <!-- Project information -->
                         <div class="project-content">
-
-
                             <span class="project-number">
                                 01
                             </span>
-
-
                             <h3>
                                 Customer Management API
                             </h3>
-
-
                             <p>
-
                                 A REST API for managing customers,
                                 authentication and customer-related data.
-
                             </p>
-
-
-                            <!-- Technology tags -->
                             <div class="project-tags">
-
                                 <span>
                                     Python
                                 </span>
-
                                 <span>
                                     Django
                                 </span>
-
                                 <span>
                                     DRF
                                 </span>
-
                                 <span>
                                     MySQL
                                 </span>
-
                             </div>
-
-
-                            <!-- Project links -->
                             <div class="project-links">
-
                                 <a href="#" target="_blank">
                                     GitHub →
                                 </a>
-
                                 <a href="#" target="_blank">
                                     Live Demo ↗
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 PROJECT 2
-                 ================================================= -->
-
                     <article class="project-card">
-
-
-                        <!-- CHANGE IMAGE HERE -->
                         <div class="project-image">
-
-                            <img src="assets/projects/project-2.jpg" alt="Weather API">
-
+                            <img src="assets/hero.jpg" alt="Weather API">
                         </div>
-
-
                         <div class="project-content">
-
                             <span class="project-number">
                                 02
                             </span>
-
-
                             <h3>
                                 Weather API
                             </h3>
-
-
                             <p>
-
                                 A backend application that connects
                                 with a weather service and returns
                                 weather information through an API.
-
                             </p>
-
-
                             <div class="project-tags">
-
                                 <span>
                                     Python
                                 </span>
-
                                 <span>
                                     Django
                                 </span>
-
                                 <span>
                                     REST API
                                 </span>
-
                                 <span>
                                     API Integration
                                 </span>
-
                             </div>
-
-
                             <div class="project-links">
-
                                 <a href="#" target="_blank">
                                     GitHub →
                                 </a>
-
                                 <a href="#" target="_blank">
                                     Live Demo ↗
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 PROJECT 3
-                 ================================================= -->
-
                     <article class="project-card">
-
-
-                        <!-- CHANGE IMAGE HERE -->
                         <div class="project-image">
-
-                            <img src="assets/projects/project-3.jpg" alt="Business Management System">
-
+                            <img src="assets/about-page.png" alt="Business Management System">
                         </div>
-
-
                         <div class="project-content">
-
                             <span class="project-number">
                                 03
                             </span>
-
-
                             <h3>
                                 Business Management System
                             </h3>
-
-
                             <p>
-
                                 A database-driven management system
                                 designed to manage business data,
                                 users and application operations.
-
                             </p>
-
-
                             <div class="project-tags">
-
                                 <span>
                                     Django
                                 </span>
-
                                 <span>
                                     DRF
                                 </span>
-
                                 <span>
                                     MySQL
                                 </span>
-
                                 <span>
                                     Authentication
                                 </span>
-
                             </div>
-
-
                             <div class="project-links">
-
                                 <a href="#" target="_blank">
                                     GitHub →
                                 </a>
-
                                 <a href="#" target="_blank">
                                     Live Demo ↗
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
-
                 </div>
-
-
-
-                <!-- View all projects -->
                 <div class="projects-button">
-
                     <a href="#" class="btn btn-outline">
                         View All Projects →
                     </a>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =========================================================
-     6. EDUCATION SECTION
-     ========================================================= -->
-
         <section class="education-section" id="education">
-
-
             <div class="container">
-
-
-                <!-- Section heading -->
                 <div class="section-heading">
-
                     <span class="section-line"></span>
-
                     <p>
                         MY JOURNEY
                     </p>
-
                     <h2>
                         Education & <span>Learning</span>
                     </h2>
-
                 </div>
-
-
                 <p class="section-description">
-
                     My academic background and continuous technical
                     learning journey.
-
                 </p>
-
-
-
-                <!-- =================================================
-             EDUCATION TIMELINE
-             ================================================= -->
-
                 <div class="education-timeline">
-
-
-                    <!-- =================================================
-                 EDUCATION 1
-                 ================================================= -->
-
                     <article class="education-item">
-
-
                         <div class="timeline-marker">
                             01
                         </div>
-
-
                         <div class="education-content">
-
                             <span class="education-date">
                                 Academic Background
                             </span>
-
-
                             <h3>
                                 Intermediate in Computer Science
                             </h3>
-
-
                             <p class="education-institute">
                                 ICS / Computer Science
                             </p>
-
-
                             <p>
-
                                 Studied computer science fundamentals,
                                 programming concepts and core subjects
                                 related to information technology.
-
                             </p>
-
                         </div>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 EDUCATION 2
-                 ================================================= -->
-
                     <article class="education-item">
-
-
                         <div class="timeline-marker">
                             02
                         </div>
-
-
                         <div class="education-content">
-
                             <span class="education-date">
                                 Technical Learning
                             </span>
-
-
                             <h3>
                                 Python Development
                             </h3>
-
-
                             <p class="education-institute">
                                 Self Learning & Practical Projects
                             </p>
-
-
                             <p>
-
                                 Learning Python through practical
                                 programming, projects, problem solving
                                 and backend development.
-
                             </p>
-
                         </div>
-
                     </article>
-
-
-
-                    <!-- =================================================
-                 EDUCATION 3
-                 ================================================= -->
-
                     <article class="education-item">
-
-
                         <div class="timeline-marker">
                             03
                         </div>
-
-
                         <div class="education-content">
-
                             <span class="education-date">
                                 Current Learning
                             </span>
-
-
                             <h3>
                                 Django & REST API Development
                             </h3>
-
-
                             <p class="education-institute">
                                 Practical Backend Development
                             </p>
-
-
                             <p>
-
                                 Building backend applications with
                                 Django, Django REST Framework, MySQL,
                                 APIs and authentication.
-
                             </p>
-
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =========================================================
-     7. CONTACT SECTION
-     ========================================================= -->
-
         <section class="contact-section" id="contact">
-
-
-            <!-- Contact background -->
-            <div class="contact-background" style="background-image: url('assets/contact-bg.jpg');"></div>
-
-
+            <div class="contact-background" style="background-image: url('assets/hero.jpg');"></div>
             <div class="contact-overlay"></div>
-
-
             <div class="container">
-
-
-                <!-- Section heading -->
                 <div class="section-heading">
-
                     <span class="section-line"></span>
-
                     <p>
                         GET IN TOUCH
                     </p>
-
                     <h2>
                         Let's <span>Work Together</span>
                     </h2>
-
                 </div>
-
-
                 <p class="section-description">
-
                     Have a project or idea in mind?
                     Let's discuss how I can help build it.
-
                 </p>
-
-
-
-                <!-- =================================================
-             CONTACT CONTENT
-             ================================================= -->
-
                 <div class="contact-content">
-
-
-                    <!-- =================================================
-                 CONTACT INFORMATION
-                 ================================================= -->
-
                     <div class="contact-info">
-
-
                         <h3>
                             Have a project in mind?
                         </h3>
-
-
                         <p>
-
                             I'm always interested in discussing
                             backend development, API projects and
                             new opportunities.
-
                         </p>
-
-
-
-                        <!-- Email -->
                         <div class="contact-item">
-
-
                             <div class="contact-icon">
                                 @
                             </div>
-
-
                             <div>
-
                                 <span>
                                     Email
                                 </span>
-
-
-                                <!-- CHANGE EMAIL HERE -->
                                 <a href="mailto:your-email@example.com">
                                     your-email@example.com
                                 </a>
-
                             </div>
-
                         </div>
-
-
-
-                        <!-- LinkedIn -->
                         <div class="contact-item">
-
                             <div class="contact-icon">
                                 in
                             </div>
-
-
                             <div>
-
                                 <span>
                                     LinkedIn
                                 </span>
-
-
-                                <!-- CHANGE LINK HERE -->
                                 <a href="#" target="_blank">
                                     LinkedIn Profile
                                 </a>
-
                             </div>
-
                         </div>
-
-
-
-                        <!-- GitHub -->
                         <div class="contact-item">
-
                             <div class="contact-icon">
                                 GH
                             </div>
-
-
                             <div>
-
                                 <span>
                                     GitHub
                                 </span>
-
-
-                                <!-- CHANGE LINK HERE -->
                                 <a href="#" target="_blank">
                                     GitHub Profile
                                 </a>
-
                             </div>
-
                         </div>
-
-
-
-                        <!-- Fiverr -->
                         <div class="contact-item">
-
                             <div class="contact-icon">
                                 F
                             </div>
-
-
                             <div>
-
                                 <span>
                                     Fiverr
                                 </span>
-
-
-                                <!-- CHANGE LINK HERE -->
                                 <a href="#" target="_blank">
                                     Fiverr Profile
                                 </a>
-
                             </div>
-
                         </div>
-
                     </div>
-
-
-
-                    <!-- =================================================
-                 CONTACT FORM
-                 ================================================= -->
-
                     <div class="contact-form-wrapper">
-
-
                         <form class="contact-form" id="contactForm">
-
-
-                            <!-- Name -->
                             <div class="form-group">
-
                                 <label for="name">
                                     Your Name
                                 </label>
-
                                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
                             </div>
-
-
-
-                            <!-- Email -->
                             <div class="form-group">
-
                                 <label for="email">
                                     Your Email
                                 </label>
-
                                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
                             </div>
-
-
-
-                            <!-- Subject -->
                             <div class="form-group">
-
                                 <label for="subject">
                                     Subject
                                 </label>
-
                                 <input type="text" id="subject" name="subject" placeholder="Project subject" required>
-
                             </div>
-
-
-
-                            <!-- Message -->
                             <div class="form-group">
-
                                 <label for="message">
                                     Your Message
                                 </label>
-
                                 <textarea id="message" name="message" rows="6"
                                     placeholder="Tell me about your project..." required></textarea>
-
                             </div>
-
-
-
-                            <!-- Submit -->
                             <button type="submit" class="submit-button">
-
                                 Send Message →
-
                             </button>
-
-
-
-                            <!--
-                        JavaScript will display the form
-                        success/error message here.
-                    -->
-
                             <p class="form-message" id="formMessage"></p>
-
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
     </main>
-
-
-
-    <!-- =========================================================
-     FOOTER
-     ========================================================= -->
-
     <footer class="footer">
-
-
         <div class="container footer-content">
-
-
-            <!-- Footer logo -->
             <a href="#home" class="footer-logo">
-
                 <span>
                     &lt;/&gt;
                 </span>
-
                 Irshad Ahmad
-
             </a>
-
-
-
-            <!-- Copyright -->
             <p>
-
                 © 2026 Irshad Ahmad.
                 All rights reserved.
-
             </p>
-
-
-
-            <!-- Footer navigation -->
             <div class="footer-links">
-
                 <a href="#home">
                     Home
                 </a>
-
                 <a href="#about">
                     About
                 </a>
-
                 <a href="#services">
                     Services
                 </a>
-
                 <a href="#projects">
                     Projects
                 </a>
-
                 <a href="#contact">
                     Contact
                 </a>
-
             </div>
-
         </div>
-
     </footer>
-
-
-
-    <!-- =========================================================
-     JAVASCRIPT FILE
-     ========================================================= -->
-
     <script src="script.js"></script>
-
-
 </body>
 
 </html>
